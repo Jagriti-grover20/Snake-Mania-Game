@@ -1,0 +1,401 @@
+/* ========== Toast In Animations Starts ========== */
+
+/* ----- Top & Bottom Right In ----- */
+@-moz-keyframes right-in {
+    0% {
+        -moz-transform: translateX(20%);
+        -webkit-transform: translateX(20%);
+        transform: translateX(20%);
+    } 65% {
+        -moz-transform: translateX(-20%);
+        -webkit-transform: translateX(-20%);
+        transform: translateX(-20%);
+    } 80% {
+        -moz-transform: translateX(20%);
+        -webkit-transform: translateX(20%);
+        transform: translateX(20%);
+    } 100% {
+        -moz-transform: translateX(0);
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes right-in {
+    0% {
+        -moz-transform: translateX(20%);
+        -webkit-transform: translateX(20%);
+        transform: translateX(20%);
+    } 65% {
+        -moz-transform: translateX(-20%);
+        -webkit-transform: translateX(-20%);
+        transform: translateX(-20%);
+    } 80% {
+        -moz-transform: translateX(20%);
+        -webkit-transform: translateX(20%);
+        transform: translateX(20%);
+    } 100% {
+        -moz-transform: translateX(0);
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes right-in {
+    0% {
+        -moz-transform: translateX(20%);
+        -webkit-transform: translateX(20%);
+        transform: translateX(20%);
+    } 65% {
+        -moz-transform: translateX(-20%);
+        -webkit-transform: translateX(-20%);
+        transform: translateX(-20%);
+    } 80% {
+        -moz-transform: translateX(20%);
+        -webkit-transform: translateX(20%);
+        transform: translateX(20%);
+    } 100% {
+        -moz-transform: translateX(0);
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+/* ----- Top & Bottom Left In ----- */
+@-moz-keyframes left-in {
+    0% {
+        -moz-transform: translateX(-20%);
+        -webkit-transform: translateX(-20%);
+        transform: translateX(-20%);
+    } 65% {
+        -moz-transform: translateX(20%);
+        -webkit-transform: translateX(20%);
+        transform: translateX(20%);
+    } 80% {
+        -moz-transform: translateX(-20%);
+        -webkit-transform: translateX(-20%);
+        transform: translateX(-20%);
+    } 100% {
+        -moz-transform: translateX(0);
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes left-in {
+    0% {
+        -moz-transform: translateX(-20%);
+        -webkit-transform: translateX(-20%);
+        transform: translateX(-20%);
+    } 65% {
+        -moz-transform: translateX(20%);
+        -webkit-transform: translateX(20%);
+        transform: translateX(20%);
+    } 80% {
+        -moz-transform: translateX(-20%);
+        -webkit-transform: translateX(-20%);
+        transform: translateX(-20%);
+    } 100% {
+        -moz-transform: translateX(0);
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes left-in {
+    0% {
+        -moz-transform: translateX(-20%);
+        -webkit-transform: translateX(-20%);
+        transform: translateX(-20%);
+    } 65% {
+        -moz-transform: translateX(20%);
+        -webkit-transform: translateX(20%);
+        transform: translateX(20%);
+    } 80% {
+        -moz-transform: translateX(-20%);
+        -webkit-transform: translateX(-20%);
+        transform: translateX(-20%);
+    } 100% {
+        -moz-transform: translateX(0);
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+/* ----- Top Center In ----- */
+@keyframes topCenter-in {
+    0% {
+        -moz-transform: translateY(-20%);
+        -webkit-transform: translateY(-20%);
+        transform: translateY(-20%);
+    } 65% {
+        -moz-transform: translateY(20%);
+        -webkit-transform: translateY(20%);
+        transform: translateY(20%);
+    } 80% {
+        -moz-transform: translateY(-20%);
+        -webkit-transform: translateY(-20%);
+        transform: translateY(-20%);
+    } 100% {
+        -moz-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes topCenter-in {
+    0% {
+        -moz-transform: translateY(-20%);
+        -webkit-transform: translateY(-20%);
+        transform: translateY(-20%);
+    } 65% {
+        -moz-transform: translateY(20%);
+        -webkit-transform: translateY(20%);
+        transform: translateY(20%);
+    } 80% {
+        -moz-transform: translateY(-20%);
+        -webkit-transform: translateY(-20%);
+        transform: translateY(-20%);
+    } 100% {
+        -moz-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes topCenter-in {
+    0% {
+        -moz-transform: translateY(-20%);
+        -webkit-transform: translateY(-20%);
+        transform: translateY(-20%);
+    } 65% {
+        -moz-transform: translateY(20%);
+        -webkit-transform: translateY(20%);
+        transform: translateY(20%);
+    } 80% {
+        -moz-transform: translateY(-20%);
+        -webkit-transform: translateY(-20%);
+        transform: translateY(-20%);
+    } 100% {
+        -moz-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+/* ----- Bottom Center In ----- */
+@-moz-keyframes bottomCenter-in {
+    0% {
+        -moz-transform: translateY(20%);
+        -webkit-transform: translateY(20%);
+        transform: translateY(20%);
+    } 65% {
+        -moz-transform: translateY(-20%);
+        -webkit-transform: translateY(-20%);
+        transform: translateY(-20%);
+    } 80% {
+        -moz-transform: translateY(20%);
+        -webkit-transform: translateY(20%);
+        transform: translateY(20%);
+    } 100% {
+        -moz-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes bottomCenter-in {
+    0% {
+        -moz-transform: translateY(20%);
+        -webkit-transform: translateY(20%);
+        transform: translateY(20%);
+    } 65% {
+        -moz-transform: translateY(-20%);
+        -webkit-transform: translateY(-20%);
+        transform: translateY(-20%);
+    } 80% {
+        -moz-transform: translateY(20%);
+        -webkit-transform: translateY(20%);
+        transform: translateY(20%);
+    } 100% {
+        -moz-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes bottomCenter-in {
+    0% {
+        -moz-transform: translateY(20%);
+        -webkit-transform: translateY(20%);
+        transform: translateY(20%);
+    } 65% {
+        -moz-transform: translateY(-20%);
+        -webkit-transform: translateY(-20%);
+        transform: translateY(-20%);
+    } 80% {
+        -moz-transform: translateY(20%);
+        -webkit-transform: translateY(20%);
+        transform: translateY(20%);
+    } 100% {
+        -moz-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+/* ========== Toast In Animations Ends   ========== */
+
+/* --------------------------------------------------------------- */
+
+/* ========== Toast Out Animations Starts ========== */
+
+/* ----- Top & Bottom Right Out ----- */
+@-moz-keyframes right-out {
+    0% {
+        -moz-transform: translateX(0);
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    } 100% {
+        -moz-transform: translateX(120%);
+        -webkit-transform: translateX(120%);
+        transform: translateX(120%);
+    }
+}
+
+@-webkit-keyframes right-out {
+    0% {
+        -moz-transform: translateX(0);
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    } 100% {
+        -moz-transform: translateX(120%);
+        -webkit-transform: translateX(120%);
+        transform: translateX(120%);
+    }
+}
+
+@keyframes right-out {
+    0% {
+        -moz-transform: translateX(0);
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    } 100% {
+        -moz-transform: translateX(120%);
+        -webkit-transform: translateX(120%);
+        transform: translateX(120%);
+    }
+}
+
+/* ----- Top & Bottom Left Out ----- */
+@-moz-keyframes topLeft-out {
+    0% {
+        -moz-transform: translateX(0);
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    } 100% {
+        -moz-transform: translateX(-120%);
+        -webkit-transform: translateX(-120%);
+        transform: translateX(-120%);
+    }
+}
+
+@-webkit-keyframes topLeft-out {
+    0% {
+        -moz-transform: translateX(0);
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    } 100% {
+        -moz-transform: translateX(-120%);
+        -webkit-transform: translateX(-120%);
+        transform: translateX(-120%);
+    }
+}
+
+@keyframes topLeft-out {
+    0% {
+        -moz-transform: translateX(0);
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    } 100% {
+        -moz-transform: translateX(-120%);
+        -webkit-transform: translateX(-120%);
+        transform: translateX(-120%);
+    }
+}
+
+/* ----- Top Center Out ----- */
+@-moz-keyframes topCenter-out {
+    0% {
+        -moz-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    } 100% {
+        -moz-transform: translateY(-120%);
+        -webkit-transform: translateY(-120%);
+        transform: translateY(-120%);
+    }
+}
+
+@-webkit-keyframes topCenter-out {
+    0% {
+        -moz-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    } 100% {
+        -moz-transform: translateY(-120%);
+        -webkit-transform: translateY(-120%);
+        transform: translateY(-120%);
+    }
+}
+
+@keyframes topCenter-out {
+    0% {
+        -moz-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    } 100% {
+        -moz-transform: translateY(-120%);
+        -webkit-transform: translateY(-120%);
+        transform: translateY(-120%);
+    }
+}
+
+/* ----- Bottom Center Out ----- */
+@-moz-keyframes bottomCenter-out {
+    0% {
+        -moz-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    } 100% {
+        -moz-transform: translateY(120%);
+        -webkit-transform: translateY(120%);
+        transform: translateY(120%);
+    }
+}
+
+@-webkit-keyframes bottomCenter-out {
+    0% {
+        -moz-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    } 100% {
+        -moz-transform: translateY(120%);
+        -webkit-transform: translateY(120%);
+        transform: translateY(120%);
+    }
+}
+
+@keyframes bottomCenter-out {
+    0% {
+        -moz-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    } 100% {
+        -moz-transform: translateY(120%);
+        -webkit-transform: translateY(120%);
+        transform: translateY(120%);
+    }
+}
+
+/* ========== Toast Out Animations Ends   ========== */

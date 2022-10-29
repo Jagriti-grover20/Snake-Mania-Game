@@ -1,0 +1,294 @@
+.toast {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    z-index: 999;
+}
+
+.toastContainer {
+    position: relative;
+    background-color: #FFFFFF;
+    width: 300px;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 3px 9px rgb(0 0 0 / 10%), 0 3px 3px rgb(0 0 0 / 10%);
+}
+
+.toastContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.35rem;
+}
+
+.toastTitleContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.toastTitle {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.toastTypeIcon {
+    width: max-content;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+}
+
+.toastTypeIcon svg {
+    aspect-ratio: 1;
+    width: 1.2rem;
+    -moz-animation: zoom-in-out 750ms linear infinite;
+    -webkit-animation: zoom-in-out 750ms linear infinite;
+    animation: zoom-in-out 750ms linear infinite;
+}
+
+@-moz-keyframes zoom-in-out {
+    0% {
+        -moz-transform: scale(1);
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    } 50% {
+        -moz-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    } 100% {
+        -moz-transform: scale(1);
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes zoom-in-out {
+    0% {
+        -moz-transform: scale(1);
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    } 50% {
+        -moz-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    } 100% {
+        -moz-transform: scale(1);
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes zoom-in-out {
+    0% {
+        -moz-transform: scale(1);
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    } 50% {
+        -moz-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    } 100% {
+        -moz-transform: scale(1);
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.successToast svg { fill: #61D345; }
+.errorToast svg { fill: #FF4B4B; }
+.warningToast svg { fill: #FFD43B; }
+.infoToast svg { fill: #6611DD}
+
+.successToast + .toastTitle { color: #61D345; }
+.errorToast + .toastTitle { color: #FF4B4B; }
+.warningToast + .toastTitle { color: #FFD43B; }
+.infoToast + .toastTitle { color: #6611DD}
+
+.toastMsg {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    color: #333333;
+    font-size: 0.9rem;
+}
+
+.toastCloseBtn {
+    position: absolute;
+    top: 0.2rem;
+    right: 0.5rem;
+    display: grid;
+    place-content: center;
+    aspect-ratio: 3/2;
+    width: 1.5rem;
+    cursor: pointer;
+}
+
+.toastCloseBtn p {
+    background-color: #454545;
+    width: 1.25rem;
+    height: 4px;
+}
+
+/* ========== Top & Bottom Right Toast ========== */
+.topRight {
+    top: 1.5rem;
+    right: 1.5rem;
+}
+
+.bottomRight {
+    bottom: 1.5rem;
+    right: 1.5rem;
+}
+
+.rightActiveAnimation {
+    -moz-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    -moz-animation: right-in 150ms linear;
+    -webkit-animation: right-in 150ms linear;
+    animation: right-in 150ms linear;
+}
+
+.rightCloseAnimation {
+    -moz-transform: translateX(120%);
+    -webkit-transform: translateX(120%);
+    transform: translateX(120%);
+    -moz-animation: right-out 150ms linear;
+    -webkit-animation: right-out 150ms linear;
+    animation: right-out 150ms linear;
+}
+
+/* ========== Top & Bottom Left Toast ========== */
+.topLeft {
+    top: 1.5rem;
+    left: 1.5rem;
+}
+
+.bottomLeft {
+    bottom: 1.5rem;
+    left: 1.5rem;
+}
+
+.leftActiveAnimation {
+    -moz-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    -moz-animation: left-in 150ms linear;
+    -webkit-animation: left-in 150ms linear;
+    animation: left-in 150ms linear;
+}
+
+.leftCloseAnimation {
+    -moz-transform: translateX(-120%);
+    -webkit-transform: translateX(-120%);
+    transform: translateX(-120%);
+    -moz-animation: left-out 150ms linear;
+    -webkit-animation: left-out 150ms linear;
+    animation: left-out 150ms linear;
+}
+
+/* ========== Top Center Toast ========== */
+.topCenter {
+    top: 1.5rem;
+    right: calc(50% - 150px);
+}
+
+.topCenterActiveAnimation {
+    -moz-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -moz-animation: topCenter-in 150ms linear;
+    -webkit-animation: topCenter-in 150ms linear;
+    animation: topCenter-in 150ms linear;
+}
+
+.topCenterCloseAnimation {
+    -moz-transform: translateY(-120%);
+    -webkit-transform: translateY(-120%);
+    transform: translateY(-120%);
+    -moz-animation: topCenter-out 150ms linear;
+    -webkit-animation: topCenter-out 150ms linear;
+    animation: topCenter-out 150ms linear;
+}
+
+/* ========== Bottom Center Toast ========== */
+.bottomCenter {
+    bottom: 1.5rem;
+    right: calc(50% - 150px);
+}
+
+.bottomCenterActiveAnimation {
+    -moz-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -moz-animation: bottomCenter-in 150ms linear;
+    -webkit-animation: bottomCenter-in 150ms linear;
+    animation: bottomCenter-in 150ms linear;
+}
+
+.bottomCenterCloseAnimation {
+    -moz-transform: translateY(120%);
+    -webkit-transform: translateY(120%);
+    transform: translateY(120%);
+    -moz-animation: bottomCenter-out 150ms linear;
+    -webkit-animation: bottomCenter-out 150ms linear;
+    animation: bottomCenter-out 150ms linear;
+}
+
+
+/* ========== Media Queries ========== */
+
+@media screen and (max-width: 400px) {
+    .toastContainer {
+        width: 280px;
+        padding: 0.75rem;
+    }
+
+    .topRight {
+        top: 1rem;
+        right: 1rem;
+    }
+    
+    .bottomRight {
+        bottom: 1rem;
+        right: 1rem;
+    }
+
+    .topLeft {
+        top: 1rem;
+        left: 1rem;
+    }
+    
+    .bottomLeft {
+        bottom: 1rem;
+        left: 1rem;
+    }
+
+    .topCenter {
+        top: 1rem;
+        right: calc(50% - 140px);
+    }
+
+    .bottomCenter {
+        bottom: 1rem;
+        right: calc(50% - 140px);
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .toastContainer { width: 400px; }
+    .topCenter, .bottomCenter { right: calc(50% - 200px); }
+}
+
+@media screen and (min-width: 1920px) {
+    .toastContainer { width: 500px; }
+    .topCenter, .bottomCenter { right: calc(50% - 250px); }
+}
+
+@media screen and (min-width: 2500px) {
+    .toastContainer { width: 600px; }
+    .topCenter, .bottomCenter { right: calc(50% - 300px); }
+}
